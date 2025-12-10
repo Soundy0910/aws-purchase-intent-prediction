@@ -1,0 +1,14 @@
+.aws/
+.cache/
+.npm/
+.local/
+.jupyter/
+.ipython/
+.ipynb_checkpoints/
+.virtual_documents/
+.sagemaker_sql_editor_api_cache/
+.bashrc
+.gitconfig
+user-default-efs
+*.db
+*.log
