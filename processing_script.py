@@ -46,10 +46,6 @@ def process_file(path, output_dir, cutoff_date):
         # Ratios
         df["cart_to_view_ratio"] = df["n_cart"] / df["n_views"].replace(0, 1)
 
-        # --- FINAL CLEAN FEATURE LIST (NO MATH LEAKS) ---
-        # Removed: n_events (Direct Math Leak)
-        # Removed: session_duration_seconds (Checkout Time Leak)
-        # Removed: log_session_duration (Derived from duration)
         feature_cols = [
             "n_views", 
             "n_cart", 
